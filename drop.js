@@ -1,11 +1,11 @@
 class Drop {
-    constructor(x,y){
+    constructor(x,y,radius){
         var options={
             'density':0.5,
             'friction':0.5
         }
-        this.body=this.Bodies.circle(x,y)
-        this.radius=this.radius
+        this.body=this.Bodies.circle(x,y,5,options)
+        this.radius=5
  
         World.add(world,this.body)
     }
@@ -15,9 +15,9 @@ class Drop {
         ellipseMode(CENTER);
         ellipse(pos.x,pos.y, this.radius,this.radius);
     }
-}
-function update(){
-    if (this.body.position.y>height){
-        Matter.Body.setPosition(this.rain, {x:random(0,40),y:random(0,400)})
+    update(){
+        if (this.body.position.y>height){
+            Matter.Body.setPosition(this.rain, {x:random(0,40),y:random(0,400)})
+        }
     }
 }

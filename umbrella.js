@@ -1,7 +1,7 @@
 class Umbrella {
-    constructor(x,y){
-        this.body=this.Bodies.circle(x,y)
-        this.radius=this.radius
+    constructor(x,y,radius){
+        this.body=this.Bodies.circle(x,y,100)
+        this.radius=100
 
         World.add(world,this.body)
     }
