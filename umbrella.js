@@ -1,6 +1,6 @@
 class Umbrella {
     constructor(x,y,radius){
-        this.body=this.Bodies.circle(x,y,100)
+        this.body=Bodies.circle(x,y,100)
         this.radius=100
 
         World.add(world,this.body)

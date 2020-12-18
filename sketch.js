@@ -24,17 +24,16 @@ function setup(){
    thunder= createSprite(230,250,50) 
    thunder.addImage(thunder1Img,"thunderbolt")
 
-   umbrellaMan=new umbrella (230,250,50)
-   umbrella.addImage(walking1Img,"walk")
+   umbrellaMan=new Umbrella (230,250,50)
 }
 
 function draw(){
 
     var maxDrops=100
     for (var i=0;i<maxDrops;i++){
-        maxDrops.push(new drop(random(0,400),random(0,400)));
+        maxDrops.push(new Drop(random(0,400),random(0,400)));
     }
 
-    umbrella.display();
+    umbrellaMan.display();
 }   
 

@@ -4,7 +4,7 @@ class Drop {
             'density':0.5,
             'friction':0.5
         }
-        this.body=this.Bodies.circle(x,y,5,options)
+        this.body=Bodies.circle(x,y,5,options)
         this.radius=5
  
         World.add(world,this.body)
